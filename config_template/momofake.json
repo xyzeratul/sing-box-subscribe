@@ -54,7 +54,7 @@
   ],
   "route": {
     "rules": [
-      {"domain_keyword": ["185409.xyz"], "server": "public"}
+      {"domain_keyword": ["185409.xyz"], "server": "public"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
