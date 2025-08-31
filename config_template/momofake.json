@@ -54,7 +54,10 @@
   ],
   "route": {
     "rules": [
-      {"domain_keyword": ["185409.xyz"], "outbound": "🎯 全球直连"},
+      {
+        "domain_keyword": ["185409.xyz"],
+        "outbound": "🎯 全球直连"
+      },
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
